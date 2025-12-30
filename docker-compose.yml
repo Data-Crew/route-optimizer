@@ -1,0 +1,30 @@
+# Route Optimizer - Docker Compose
+# ==================================
+# Modular route optimization: CPP, TSP, and more
+#
+# Usage:
+#   docker compose up                                    # Show available examples
+#   docker compose run app python parking_enforcement.py  # CPP example
+#   docker compose run app python delivery_route.py       # TSP example
+#   docker compose run app bash                          # Interactive shell
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: route-optimizer
+    volumes:
+      # Mount source code for development
+      - .:/app
+      # Persist output files
+      - ./output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1
+    # Override default command if needed
+    # command: python parking_enforcement.py
+    
+    # Uncomment to keep container running for development
+    # stdin_open: true
+    # tty: true
+

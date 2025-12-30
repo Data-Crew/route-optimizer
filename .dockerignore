@@ -1,0 +1,39 @@
+# Route Optimizer - Docker Ignore
+# =================================
+
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv
+venv
+ENV
+env
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+.cursor
+
+# Output files (mounted as volume)
+output/
+*.xlsx
+*.png
+
+# Documentation
+*.md
+!README.md
+LICENSE
+
+# OS
+.DS_Store
+Thumbs.db
+
