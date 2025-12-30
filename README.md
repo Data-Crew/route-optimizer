@@ -2,6 +2,8 @@
 
 A modular route optimization system supporting multiple algorithms for different routing problems.
 
+![Route Optimizer Demo](docs/demo.gif)
+
 ## 📋 Description
 
 **Route Optimizer** is a flexible framework for solving various route optimization problems using real street networks from OpenStreetMap. It provides a pluggable architecture where different algorithms can be applied depending on your use case.
