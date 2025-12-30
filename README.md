@@ -2,7 +2,9 @@
 
 A modular route optimization system supporting multiple algorithms for different routing problems.
 
-![Route Optimizer Demo](docs/demo.gif)
+<div align="center">
+  <img src="docs/demo.gif" alt="Route Optimizer Demo" width="700">
+</div>
 
 ## 📋 Description
 
