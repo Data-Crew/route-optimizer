@@ -1,0 +1,91 @@
+{
+  "configuration": {
+    "city": "La Plata, Argentina",
+    "bbox": {
+      "description": "Bounding box (west, south, east, north)",
+      "west": -57.9605,
+      "south": -34.9210,
+      "east": -57.9455,
+      "north": -34.9095
+    },
+    "start_point": {
+      "description": "Start and return point (lat, lon)",
+      "name": "Corner of 12th and 50th",
+      "latitude": -34.91719,
+      "longitude": -57.95067
+    }
+  },
+  "zones": [
+    {
+      "name": "courthouse",
+      "description": "Courthouse Zone",
+      "polygon": [
+        [-57.957, -34.915],
+        [-57.949, -34.915],
+        [-57.949, -34.911],
+        [-57.957, -34.911]
+      ],
+      "schedule": {
+        "start": "08:00",
+        "end": "14:00"
+      },
+      "weekdays": [0, 1, 2, 3, 4],
+      "weekday_names": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "prohibited_streets": [],
+      "color": "pink"
+    },
+    {
+      "name": "downtown",
+      "description": "Downtown Zone",
+      "polygon": [
+        [-57.955, -34.9145],
+        [-57.9475, -34.9145],
+        [-57.9475, -34.9185],
+        [-57.955, -34.9185]
+      ],
+      "schedule": {
+        "start": "08:00",
+        "end": "20:00"
+      },
+      "weekdays": [0, 1, 2, 3, 4, 5],
+      "weekday_names": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "prohibited_streets": [],
+      "color": "gold"
+    },
+    {
+      "name": "12th_street",
+      "description": "12th Street Zone",
+      "polygon": [
+        [-57.955, -34.9125],
+        [-57.952, -34.9125],
+        [-57.952, -34.9195],
+        [-57.955, -34.9195]
+      ],
+      "schedule": {
+        "start": "08:00",
+        "end": "20:00"
+      },
+      "weekdays": [0, 1, 2, 3, 4, 5],
+      "weekday_names": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "prohibited_streets": [],
+      "color": "violet"
+    }
+  ],
+  "route_types": {
+    "full": {
+      "name": "Full Route",
+      "description": "All zones (Monday to Friday 8am-8pm)",
+      "zones": ["courthouse", "downtown", "12th_street"]
+    },
+    "no_courthouse": {
+      "name": "No Courthouse",
+      "description": "For enforcement officers working after 2pm",
+      "zones": ["downtown", "12th_street"]
+    },
+    "saturday": {
+      "name": "Saturday",
+      "description": "Weekend route",
+      "zones": ["downtown", "12th_street"]
+    }
+  }
+}
