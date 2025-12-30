@@ -3,7 +3,7 @@
 A modular route optimization system supporting multiple algorithms for different routing problems.
 
 <div align="center">
-  <img src="docs/demo.gif" alt="Route Optimizer Demo" width="700">
+  <img src="docs/demo.gif" alt="Route Optimizer Demo">
 </div>
 
 ## 📋 Description
